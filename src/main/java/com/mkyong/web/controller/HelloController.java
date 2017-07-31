@@ -32,7 +32,7 @@ public class HelloController {
 	@RequestMapping(value = "/first", method = RequestMethod.GET)
 	public String printWelcomes(ModelMap model) {
 
-		model.addAttribute("message", "Spring 3 MVC Hello World");
+		model.addAttribute("message", "Spring 3 MVC Hello Worlds");
 		return "first";
 
 	}
