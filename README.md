@@ -9,7 +9,7 @@ Template for Spring 3 MVC + JSP view + XML configuration, using Maven build tool
 * Logback 1.1.3
 * Boostrap 3
 
-###2. To Run this project locallydfgdg
+###2. To Run this project on my own jenkins server
 ```shell
 $ git clone https://github.com/mkyong/spring3-mvc-maven-xml-hello-world
 $ mvn jetty:run
