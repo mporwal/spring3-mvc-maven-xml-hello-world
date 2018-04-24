@@ -36,8 +36,6 @@ jobs:
       # run tests!
       - run: mvn install
       
-      - run: mvn clean deploy
-      
   deploy-job:
     docker:
       - image: circleci/openjdk:8-jdk
