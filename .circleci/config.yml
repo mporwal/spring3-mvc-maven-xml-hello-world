@@ -36,3 +36,8 @@ jobs:
       # run tests!
       - run: mvn install
       
+  deployment:
+    prod:
+      branch: master
+      commands:
+        - aws s3 target s3://learncircleci/deploy/ --delete
