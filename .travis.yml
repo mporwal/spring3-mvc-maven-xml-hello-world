@@ -5,7 +5,7 @@ before_deploy:
 - git commit -m "any changes"
 deploy:
   provider: s3
-  local_dir: target/spring3-mvc-maven-xml-hello-world-1.0-SNAPSHOT.war
+  file: target/spring3-mvc-maven-xml-hello-world-1.0-SNAPSHOT.war
   access_key_id: "AKIAJOP65SITX634BSEQ"
   secret_access_key: "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"
   bucket: "learn-travisci"
