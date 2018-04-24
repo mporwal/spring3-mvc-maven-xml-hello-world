@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  build-job:
     docker:
       # specify the version you desire here
       - image: circleci/openjdk:8-jdk
@@ -52,10 +52,10 @@ workflows:
       
       -deploy:
         jobs:
-          - build
+          - build-job
           - deploy-job:
               requires:
-                - build
+                - build-job
               filters:
                 branches:
                   only: master
