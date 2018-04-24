@@ -1,5 +1,7 @@
 language: java
 jdk: oraclejdk8
+before_deploy:
+- git add *
 deploy:
   provider: s3
   local_dir: target
